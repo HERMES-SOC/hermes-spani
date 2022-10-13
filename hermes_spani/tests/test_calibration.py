@@ -1,5 +1,5 @@
 import pytest
-import hermes_spani.calibration as calib import *
+import hermes_spani.calibration as calib
 
 
 def test_calibrate_file():
