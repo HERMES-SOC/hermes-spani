@@ -97,3 +97,9 @@ omit = [
   '*/hermes_spani/version*',
 ]
 
+[tool.black]
+extend-exclude = '''
+/(
+    _version.py
+)/
+'''
