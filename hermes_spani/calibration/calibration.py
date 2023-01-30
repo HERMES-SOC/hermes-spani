@@ -150,11 +150,11 @@ def parse_l0_sci_packets(data_filename: Path) -> dict:
     >>> data = calib.parse_spani_sci_packets(data_filename)  # doctest: +SKIP
     """
     log.info(f"Parsing packets from file:{data_filename}.")
-
-    pkt = ccsdspy.FixedLength.from_file(
-        os.path.join(hermes_spani._data_directory, "MAG_sci_packet_def.csv")
-    )
-    data = pkt.load(data_filename)
+    data = {}
+    #pkt = ccsdspy.FixedLength.from_file(
+    #    os.path.join(hermes_spani._data_directory, "SPANI_sci_packet_def.csv")
+    #)
+    #data = pkt.load(data_filename)
     return data
 
 
